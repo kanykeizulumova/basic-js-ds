@@ -26,10 +26,6 @@ class Stack {
   peek() {
     return this.stack[this.stack.length - 1];
   }
-
-  peek() {
-    return this.stack[this.stack.length - 1];
-  }
 }
 
 module.exports = {
