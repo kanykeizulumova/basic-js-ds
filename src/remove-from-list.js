@@ -21,9 +21,15 @@ const { NotImplementedError } = require('../lib');
  *   }
  * }
  */
-function removeKFromList(/* l, k */) {
-  // Remove line below and write your code here
-  throw new NotImplementedError('Not implemented');
+function removeKFromList(l, k) {
+  this.list = l;
+  let current = this.list;
+  if (current === null) return null;
+
+  while (current && current.value === k) {
+    current = current.next;
+  }
+  return current;
 }
 
 module.exports = {
